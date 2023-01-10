@@ -1,0 +1,21 @@
+MAN/READERS MANUAL Entry for 'vardictionary':
+******************************************************
+FUNCTION: [vardictionary]
+
+Description
+Creates a new empty dictionary
+
+General Syntax
+::*dictname
+
+*dictname				= variable to create as new. If this variable does not exist a new variable will be created as a dictionary, if not a current variable can be replaced with a dictionary
+
+Example:
+vardictionary::*car >> vardictionaryappend::*car, *'Nissan' >> listvars
+
+Dictionary values can be accessed also using general array brackets as other languages `[]` but only in the first dimension:
+
+Example:
+output::*dictionary[key]
+output::*f'Welcome {((user[name]))}'
+
