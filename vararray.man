@@ -14,6 +14,12 @@ General Syntax
 Example:
 var::*car >> varset::*car, *'Nissan' >> vararray::*car, *true >> listvars
 
+Array values can be accessed also using general array brackets as other languages `[]`:
+
+Example:
+output::*array[12][6][0]
+output::*f'Welcome {((users[7]))}'
+
 See Also
 var, vardelete, vartag
 
